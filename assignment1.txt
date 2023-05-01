@@ -1,0 +1,45 @@
+assignment1:
+
+    write a program to create player dictionary
+    (note:read the pno and pname at the time of runtime)
+
+progeram:
+
+d={23:['sachin',450,15000,356],66:['kohli',312,12000,121],12:['dhoni',398,13000,50]}
+print('Player name:',d[12][0])
+print('Number of matches:',d[12][1])
+print('Runs:',d[12][2])
+print('Wickets:',d[12][3])
+
+ind={}
+n=int(input("Enter no of players:"))
+for i in range(1,n+1):
+    l=[]
+    pno=int(input('Enter player number:'))
+    pname=input('Enter player name')
+    matches=int(input('Enter no of matches'))
+    runs=int(input('How many runs scored'))
+    wickets=int(input('How wickets taken'))
+    l.append(pname)
+    l.append(matches)
+    l.append(runs)
+    l.append(wickets)
+    ind[pno]=l#here pno is the key and list l is the value
+print(ind)
+pno=int(input('Enter player number for details'))
+print('Player name:',ind[pno][0]
+print('Number of matches:',ind[pno][1])
+print('Runs:',ind[pno][2])
+print('Wickets:',ind[pno][3])
+
+
+
+output:
+
+enter player no:23
+
+
+player name:sachin
+number of matches:450
+runs:15000
+wickets:356
